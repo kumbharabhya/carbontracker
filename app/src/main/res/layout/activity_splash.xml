@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".splash">
+
+  <TextView
+      android:id="@+id/TravelText"
+      android:layout_width="287dp"
+      android:layout_height="65dp"
+      android:layout_marginStart="62dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="62dp"
+      android:layout_marginBottom="92dp"
+      android:fontFamily="@font/aclonica"
+      android:text="TRAVEL"
+      android:textAlignment="center"
+      android:textColor="#FFD700"
+      android:textSize="48sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/RBlogo" />
+
+  <ImageView
+      android:id="@+id/RBlogo"
+      android:layout_width="334dp"
+      android:layout_height="390dp"
+      android:layout_marginStart="52dp"
+      android:layout_marginTop="160dp"
+      android:layout_marginEnd="25dp"
+      android:layout_marginBottom="24dp"
+      app:layout_constraintBottom_toTopOf="@+id/TravelText"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/logo" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="301dp"
+      android:layout_height="58dp"
+      android:layout_marginStart="62dp"
+      android:layout_marginTop="70dp"
+      android:layout_marginEnd="62dp"
+      android:layout_marginBottom="20dp"
+      android:fontFamily="@font/amarante"
+      android:text="CarbonEcho"
+      android:textAlignment="center"
+      android:textColor="#D7E60B"
+      android:textSize="48sp"
+      android:textStyle="bold|italic"
+      app:layout_constraintBottom_toTopOf="@+id/RBlogo"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backscreen2"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/distanceInput"
+        android:layout_width="371dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="289dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="6dp"
+        android:hint="Enter distance (km)"
+        app:layout_constraintBottom_toTopOf="@+id/ridersInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ridersInput"
+        android:layout_width="371dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="6dp"
+        android:hint="Enter number of riders"
+        app:layout_constraintBottom_toTopOf="@+id/idleTimeInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distanceInput" />
+
+    <Spinner
+        android:id="@+id/fuelTypeSpinner"
+        android:layout_width="373dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="19dp"
+        android:entries="@array/fuel_types"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rideTimeSpinner" />
+
+    <Spinner
+        android:id="@+id/trafficSpinner"
+        android:layout_width="373dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="6dp"
+        android:entries="@array/traffic_conditions"
+        app:layout_constraintBottom_toTopOf="@+id/rideTimeSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idleTimeInput" />
+
+    <EditText
+        android:id="@+id/idleTimeInput"
+        android:layout_width="371dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="6dp"
+        android:hint="Enter idle time (mins)"
+        app:layout_constraintBottom_toTopOf="@+id/trafficSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ridersInput" />
+
+    <Spinner
+        android:id="@+id/rideTimeSpinner"
+        android:layout_width="373dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="6dp"
+        android:entries="@array/ride_time"
+        app:layout_constraintBottom_toTopOf="@+id/fuelTypeSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trafficSpinner" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#673AB7"
+        android:onClick="finish"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuelTypeSpinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

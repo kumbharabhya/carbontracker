@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".dashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!--        &lt;!&ndash; Title &ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/dashboard_title"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Eco-Impact Dashboard"-->
+        <!--            android:textSize="24sp"-->
+        <!--            android:textColor="#FFD700"-->
+        <!--            android:layout_marginBottom="16dp"-->
+        <!--            android:textStyle="bold"/>-->
+
+        <!--        &lt;!&ndash; Cumulative Savings &ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/cumulative_savings"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Total Savings: 0 kg CO₂"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textColor="#FFD700"-->
+        <!--            android:layout_marginBottom="16dp"/>-->
+
+        <!--        &lt;!&ndash; Milestone &ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/milestone"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Next Milestone: Save 100 kg CO₂!"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:textColor="#FFFFFF"-->
+        <!--            android:layout_marginBottom="16dp"/>-->
+
+        <!--        &lt;!&ndash; Motivational Badge &ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/motivational_text"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Keep Going! 🌱"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textColor="#FFD700"-->
+        <!--            android:layout_marginBottom="24dp"-->
+        <!--            android:textStyle="italic"/>-->
+
+        <!--        &lt;!&ndash; Progress Bar &ndash;&gt;-->
+        <!--        <ProgressBar-->
+        <!--            android:id="@+id/progress_bar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="16dp"-->
+        <!--            android:indeterminate="false"-->
+        <!--            android:progress="45"-->
+        <!--            android:max="100"-->
+        <!--            android:progressTint="#FFD700"/>-->
+
+        <!--        &lt;!&ndash; Progress Text &ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/progress_text"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="45% to next milestone"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textColor="#FFFFFF"/>-->
+
+        <!-- Badge Text -->
+        <TextView
+            android:id="@+id/badgeText"
+            android:layout_width="411dp"
+            android:layout_height="147dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#FFD700"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Milestone Text -->
+        <TextView
+            android:id="@+id/milestoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="Milestone Progress"
+            android:textColor="#FFD700"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
